@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <main> 
+        <h1>Formulari de registre</h1> 
+       
+        <p class="introduccio">Omple el formulari per registrar-te a l'activitat. </p> 
+
+          <form action="https://m0373ac3.free.nf/processa.php" method="get">
+
+            <fieldset> 
+                
+              <legend>Dades personals</legend>
+                <div>
+                 <label for="nom">Nom:</label> 
+                 <input type="text" id="nom" name="nom"required> 
+                </div>
+                <div>
+                 <label for="cognoms">Cognoms:</label> 
+                 <input type="text" id="cognoms" name="cognoms"> 
+                </div>
+                <div>
+                 <label for="correu">Correu electronic:</label> 
+                 <input type="email" id="correu" name="correu">
+                </div>
+                <div>
+                 <label for="contrasenya">Contrasenya:</label> 
+                 <input type="password" id="contrasenya" name="contrasenya">
+                </div>
+                <div>
+                 <label for="edat">Edat:</label> 
+                 <input type="number" id="edat" name="edat">
+                </div>
+                <div>
+                 <label for="naixement">Data de naixement:</label> 
+                 <input type="date" id="naixement" name="naixement">
+                </div>
+                <div>
+                 <label for="telefòn">Telefòn:</label> 
+                 <input type="tel" id="telefòn" name="telefòn">
+                </div>
+                <div>
+                 <label for="web">Pàgina web:</label> 
+                 <input type="url" id="web" name="web">
+                </div>
+   
+            </fieldset> 
+       
+        <hr>
+            
+            <fieldset>
+              <legend>Preferències</legend>
+              <div>
+                 <label for="color">Color preferit:</label> 
+                 <input type="color" id="color" name="color" value="#0d6efd"> 
+              </div>
+              <div>
+                 <label for="rang">Quant t'agrada programar?</label>
+                    <input type="range" id="rang" name="rang" min="0" max="10" value="5">
+                    <small class="ajuda">Selecciona un valor entre 0 i 10.</small>
+              </div>
+               <label>Genere</label>
+                 <label for="home">Home</label>
+                 <input type="radio" id="home" name="genere" value="home">
+                 <label for="dona">Dona</label>
+                 <input type="radio" id="dona" name="genere" value="dona">
+                 <label for="dona">Altre</label>
+                 <input type="radio" id="altre" name="genere" value="altre">
+                <div>
+                  
+
+                </div>
+                 <label>Aficions:</label>
+                    <div>
+                        
+                        <input type="checkbox" id="programacio" name="aficions" value="programacio">
+                        <label for="programacio">Programació</label>
+                        <input type="checkbox" id="videojocs" name="aficions" value="videojocs">
+                        <label for="videojocs">Videojocs</label>
+                        <input type="checkbox" id="esport" name="aficions" value="esport">
+                        <label for="esport">Esport</label>
+                        <input type="checkbox" id="musica" name="aficions" value="musica">
+                        <label for="musica">Música</label>
+                        
+                    </div>                  
+                        
+            </fieldset>
+        <hr>    
+           
+         <fieldset>
+                <legend>Localització</legend>
+
+                <div>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                    <option value="">— Selecciona un país —</option>
+                    <option value="es">Espanya</option>
+                    <option value="fr">França</option>
+                    <option value="it">Itàlia</option>
+                    <option value="po">Portugal</option>
+                    <option value="al">Alemanya</option>
+                    <option value="gb">Regne Unit</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="municipi">Municipi:</label>
+                    <input type="text" id="municipi" name="municipi" list="municipis" placeholder="Escriu o escull un municipi">
+                    <datalist id="municipis">
+                    <option value="Barcelona"></option>
+                    <option value="Girona"></option>
+                    <option value="Lleida"></option>
+                    <option value="Tarragona"></option>
+                    <option value="Badalona"></option>
+                    <option value="Sabadell"></option>
+                    <option value="Terrassa"></option>
+                    <option value="Mataró"></option>
+                    </datalist>
+                </div>
+            
+            </fieldset>
+
+        <hr>
+         
+         <fieldset>
+                <legend>Informació addicional</legend>
+
+                <div>
+                <label for="comentaris">Comentaris:</label>
+                <textarea id="comentaris" name="comentaris" placeholder="Escriu aquí els teus comentaris..."></textarea>
+                </div>
+
+                <div>
+                <label for="fitxer">Adjunta un fitxer:</label>
+                <small class="ajuda">Selecciona un fitxer o arrossega'l aquí</small>
+                <input type="file" id="fitxer" name="fitxer">
+                </div>
+
+                <div>
+                <input type="checkbox" id="condicions" name="condicions" required>
+                <label for="condicions">Accepto les condicions de la inscripció</label>
+                </div>
+            </fieldset>
+       
+       
+        <hr>
+
+          <fieldset>
+    
+         <input type="submit" id="enviar" value="Enviar"> 
+         <input type="reset" id="netejar" value="Netejar">
+        
+          </fieldset>
+
+        </hr>
+          
+
+        </form>
+        </main>
+   
+      
+     
+</body>
+</html>
